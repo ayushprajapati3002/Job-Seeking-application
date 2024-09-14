@@ -1,5 +1,8 @@
 import app from "./app.js";
+import dotenv from "dotenv";
 import cloudinary from "cloudinary";
+
+dotenv.config();
 
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLIENT_NAME,
